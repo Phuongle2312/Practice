@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <script src="../BNWD/assets/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<header>
+    <div>
+        <nav class="navbar navbar-expand-sm bg-light m-2">
+            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse m-2" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="./product.html">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <div class="ms-2 me-auto position-relative">
+                            <a class="nav-link" href="./notification.html">Notifications</a>
+                            <span class="badge bg-danger rounded-bottom-circle position-absolute top-0 end-0">5</span>
+                        </div>
+
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+
+</header>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">⚽ Football Store</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Sản phẩm</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Giỏ hàng</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Detail -->
+    <div class="container my-5">
+        <div class="row">
+
+            <!-- Product Image -->
+            <div class="col-md-6">
+                <img src="images/nike1.jpg" class="img-fluid border rounded mb-3" id="mainImage" alt="Nike Mercurial">
+                <div class="d-flex gap-2">
+                    <img src="images/nike1.jpg" class="img-thumbnail small-img" alt="Nike"
+                        style="width:80px;cursor:pointer;">
+                    <img src="images/nike2.jpg" class="img-thumbnail small-img" alt="Nike"
+                        style="width:80px;cursor:pointer;">
+                    <img src="images/nike3.jpg" class="img-thumbnail small-img" alt="Nike"
+                        style="width:80px;cursor:pointer;">
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="col-md-6">
+                <h2>Nike Mercurial Superfly 9</h2>
+                <p class="text-muted">Giày đá bóng chính hãng Nike</p>
+                <h4 class="text-danger">3.200.000đ</h4>
+                <p>Được thiết kế cho tốc độ và sự linh hoạt, Nike Mercurial là sự lựa chọn hàng đầu của các cầu thủ
+                    chuyên nghiệp.</p>
+
+                <!-- Size Options -->
+                <div class="mb-3">
+                    <label for="size" class="form-label fw-bold">Chọn size:</label>
+                    <select class="form-select w-50" id="size">
+                        <option>39</option>
+                        <option>40</option>
+                        <option>41</option>
+                        <option>42</option>
+                        <option>43</option>
+                    </select>
+                </div>
+
+                <!-- Quantity -->
+                <div class="mb-3">
+                    <label for="qty" class="form-label fw-bold">Số lượng:</label>
+                    <input type="number" id="qty" class="form-control w-25" min="1" value="1">
+                </div>
+
+                <!-- Buttons -->
+                <button class="btn btn-warning me-2">🛒 Thêm vào giỏ</button>
+                <button class="btn btn-danger">Mua ngay</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Related Products -->
+    <div class="container my-5">
+        <h3 class="mb-4">Sản phẩm liên quan</h3>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card h-100 shadow">
+                    <img src="images/adidas1.jpg" class="card-img-top" alt="Adidas Predator">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Adidas Predator</h6>
+                        <p class="text-danger fw-bold">2.800.000đ</p>
+                        <a href="product.html" class="btn btn-outline-dark btn-sm">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow">
+                    <img src="images/puma1.jpg" class="card-img-top" alt="Puma Future">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Puma Future</h6>
+                        <p class="text-danger fw-bold">2.500.000đ</p>
+                        <a href="product.html" class="btn btn-outline-dark btn-sm">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card h-100 shadow">
+                    <img src="images/nike4.jpg" class="card-img-top" alt="Nike Phantom">
+                    <div class="card-body text-center">
+                        <h6 class="card-title">Nike Phantom</h6>
+                        <p class="text-danger fw-bold">3.000.000đ</p>
+                        <a href="product.html" class="btn btn-outline-dark btn-sm">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Football Store | Thiết kế bởi Bạn ⚡</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Chuyển ảnh chính khi bấm thumbnail
+        const mainImage = document.getElementById('mainImage');
+        const smallImgs = document.querySelectorAll('.small-img');
+        smallImgs.forEach(img => {
+            img.addEventListener('click', () => {
+                mainImage.src = img.src;
+            });
+        });
+    </script>
+</body>
+
+</html>
