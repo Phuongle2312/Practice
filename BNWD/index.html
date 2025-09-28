@@ -5,41 +5,224 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BNWD/assets/css/bootstrap.min.css">
     <script src="../BNWD/assets/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 <header>
-    <div>
-        <nav class="navbar navbar-expand-sm bg-light m-2">
-            <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse m-2" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="./product.html">Products</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./service.html">Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
-                    <li class="nav-item">
-                        <div class="ms-2 me-auto position-relative">
-                            <a class="nav-link" href="./notification.html">Notifications</a>
-                            <span class="badge bg-danger rounded-bottom-circle position-absolute top-0 end-0">5</span>
-                        </div>
-
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-    </div>
 
 </header>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">👟 Football Shoes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nike">Nike</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#adidas">Adidas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#puma">Puma</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-warning ms-3" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            🛒 Giỏ hàng (<span id="cart-count">0</span>)
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Banner -->
+    <header class="banner text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <h1 class="fw-bold">Shop Giày Đá Bóng Chính Hãng</h1>
+            <p>Hàng Nike - Adidas - Puma mới nhất 2025</p>
+            <a href="#nike" class="btn btn-warning btn-lg">Khám phá ngay</a>
+        </div>
+    </header>
+
+    <!-- NIKE Section -->
+    <section id="nike" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">👟 Giày Nike</h2>
+            <div class="row g-4">
+                <!-- Nike 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="./image/Nike/ZM+SUPERFLY+10+ELITE+FG.avif" class="card-img-top" alt="Nike">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Nike Mercurial Superfly 9</h5>
+                            <p class="text-muted">2.500.000 đ</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Nike Mercurial Superfly 9"
+                                data-price="3000000">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADIDAS Section -->
+    <section id="adidas" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">⚽ Giày Adidas</h2>
+            <div class="row g-4">
+                <!-- Adidas 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="./image/Adidas/Giay_DJa_Bong_Turf_Predator_Accuracy.4_trang_GY9995_22_model.avif"
+                            class="card-img-top" alt="Adidas">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Adidas Predator Accuracy</h5>
+                            <p class="text-muted">2.800.000 đ</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Adidas Predator Accuracy"
+                                data-price="2800000">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUMA Section -->
+    <section id="puma" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">🔥 Giày Puma</h2>
+            <div class="row g-4">
+                <!-- Puma 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
+                        <img src="./image/Puma/Giày-bóng-đá-FUTURE-8-ULTIMATE-AG.avif" class="card-img-top" alt="Puma">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Puma Future Ultimate</h5>
+                            <p class="text-muted">2.200.000 đ</p>
+                            <button class="btn btn-warning add-to-cart" data-name="Puma Future Ultimate"
+                                data-price="2200000">Mua ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <img id="product-img" src="" class="img-fluid rounded shadow" alt="Sản phẩm">
+                </div>
+                <div class="col-md-6">
+                    <h2 id="product-name"></h2>
+                    <h4 class="text-danger fw-bold" id="product-price"></h4>
+                    <p class="mt-3">⚡ Giày đá bóng chính hãng, mẫu mới nhất, chất lượng cao dành cho cầu thủ chuyên
+                        nghiệp và phong trào.</p>
+                    <button id="buy-now" class="btn btn-warning">Mua ngay</button>
+                    <a href="index.html" class="btn btn-secondary ms-2">⬅ Quay lại</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h5 class="modal-title">🛒 Giỏ hàng</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th>Sản phẩm</th>
+                                <th>Giá</th>
+                                <th>Số lượng</th>
+                                <th>Thành tiền</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody id="cart-items">
+                            <tr>
+                                <td colspan="5">Giỏ hàng trống</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h5 class="text-end">Tổng cộng: <span id="cart-total">0</span> đ</h5>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success">Thanh toán</button>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Football Shoes Shop | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="../BNWD/assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Cart Script -->
+    <script>
+
+
+        let cart = [];
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', function () {
+                const name = this.dataset.name;
+                const price = parseInt(this.dataset.price);
+
+                const item = cart.find(p => p.name === name);
+                if (item) {
+                    item.quantity++;
+                } else {
+                    cart.push({ name, price, quantity: 1 });
+                }
+                updateCart();
+            });
+        });
+
+        function updateCart() {
+            const cartItems = document.getElementById('cart-items');
+            const cartCount = document.getElementById('cart-count');
+            const cartTotal = document.getElementById('cart-total');
+
+            cartItems.innerHTML = '';
+            let total = 0;
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = '<tr><td colspan="5">Giỏ hàng trống</td></tr>';
+            } else {
+                cart.forEach((item, index) => {
+                    const row = `
+            <tr>
+              <td>${item.name}</td>
+              <td>${item.price.toLocaleString()} đ</td>
+              <td>${item.quantity}</td>
+              <td>${(item.price * item.quantity).toLocaleString()} đ</td>
+              <td><button class="btn btn-sm btn-danger" onclick="removeItem(${index})">Xóa</button></td>
+            </tr>
+          `;
+                    cartItems.innerHTML += row;
+                    total += item.price * item.quantity;
+                });
+            }
+
+            cartCount.textContent = cart.length;
+            cartTotal.textContent = total.toLocaleString();
+        }
+
+        function removeItem(index) {
+            cart.splice(index, 1);
+            updateCart();
+        }
+    </script>
 </body>
 
 </html>
