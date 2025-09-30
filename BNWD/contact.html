@@ -5,13 +5,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../BNWD/assets/css/bootstrap.min.css">
     <script src="../BNWD/assets/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="./index.html">⚽ Football Store</a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="./index.html" class="nav-link">Trang chủ</a></li>
+                    <li class="nav-item"><a href="./service.html" class="nav-link">Dịch vụ</a></li>
+                    <li class="nav-item"><a href="./contact.html" class="nav-link active">Liên hệ</a></li>
+                    <li class="nav-item"><a href="./notification.html" class="nav-link">Thông báo</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
+    <!-- Contact -->
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Liên hệ với chúng tôi</h2>
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Họ và tên</label>
+                        <input type="text" class="form-control" placeholder="Nhập họ tên">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Nhập email">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Nội dung</label>
+                        <textarea class="form-control" rows="5" placeholder="Viết tin nhắn..."></textarea>
+                    </div>
+                    <button class="btn btn-warning">Gửi tin nhắn</button>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h5>Thông tin cửa hàng</h5>
+                <p>🏪 Địa chỉ: 123 Trần Hưng Đạo, Hà Nội</p>
+                <p>📞 Hotline: 0987 654 321</p>
+                <p>✉️ Email: support@footballstore.vn</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." width="100%" height="300" style="border:0;"
+                    allowfullscreen loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2025 Football Store | Liên hệ</p>
+    </footer>
+
+    <script src="../BNWD/assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
